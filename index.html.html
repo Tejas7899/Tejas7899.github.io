@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tejas N K – Python Backend Developer</title>
+<meta name="description" content="Tejas N K, Bengaluru. Python backend developer working with Django, FastAPI, PostgreSQL and LLM integration. Presented at ICAIES 2025.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0f12;--bg2:#14171c;--tx:#e9e7e2;--mu:#8b9097;--ln:#242830;--ac:#5fd4c8;--ac2:#e8b86a;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f5f3ee;--bg2:#ebe8e1;--tx:#17191c;--mu:#5d6269;--ln:#d6d2c8;--ac:#0b7a72;--ac2:#9a6410;color-scheme:light}}
+:root[data-theme="light"]{--bg:#f5f3ee;--bg2:#ebe8e1;--tx:#17191c;--mu:#5d6269;--ln:#d6d2c8;--ac:#0b7a72;--ac2:#9a6410;color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.65 "Space Grotesk",system-ui,sans-serif}
+a{color:inherit}p{margin:0 0 16px}
+.wrap{display:grid;grid-template-columns:320px 1fr;max-width:1120px;margin:0 auto;gap:64px;padding:0 28px}
+aside{position:sticky;top:0;height:100vh;padding:72px 0 40px;display:flex;flex-direction:column}
+.mark{width:84px;height:84px;border:1px solid var(--ac);border-radius:50%;display:grid;place-items:center;font:500 24px "JetBrains Mono",monospace;color:var(--ac);margin-bottom:28px}
+h1{font-size:44px;line-height:1.05;margin:0 0 10px;letter-spacing:-.02em}
+.role{color:var(--mu);margin:0 0 28px}
+nav{display:flex;flex-direction:column;gap:6px;margin-bottom:auto}
+nav a{text-decoration:none;color:var(--mu);font:400 13px "JetBrains Mono",monospace;display:flex;align-items:center;gap:12px;padding:3px 0;transition:color .2s}
+nav a::before{content:"";width:18px;height:1px;background:var(--mu);transition:.25s}
+nav a.on,nav a:hover{color:var(--tx)}nav a.on::before{width:44px;background:var(--ac)}
+.links{display:flex;gap:18px;font:400 13px "JetBrains Mono",monospace}
+.links a{color:var(--mu);text-decoration:none}.links a:hover{color:var(--ac)}
+main{padding:72px 0 80px}section{margin-bottom:96px}
+h2{font:500 13px "JetBrains Mono",monospace;color:var(--ac);letter-spacing:.08em;text-transform:uppercase;margin:0 0 28px}
+h2::before{content:"// "}
+.lead{font-size:21px;line-height:1.55}
+.proc{margin-top:32px;border:1px solid var(--ln);background:var(--bg2);border-radius:4px;font:400 13px/1.9 "JetBrains Mono",monospace;padding:16px 18px;overflow-x:auto}
+.proc .h{color:var(--mu);margin-bottom:6px}.proc span{color:var(--ac)}.proc i{font-style:normal;color:var(--ac2)}
+.row{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:26px 0;border-top:1px solid var(--ln)}
+.row:last-child{border-bottom:1px solid var(--ln)}
+.when{font:400 12px/1.8 "JetBrains Mono",monospace;color:var(--mu)}
+.row h3{margin:0 0 2px;font-size:20px}.org{color:var(--ac2);margin-bottom:12px}
+.row ul{margin:0;padding-left:18px;color:var(--mu)}.row li{margin-bottom:6px}
+.proj{padding:28px 0;border-top:1px solid var(--ln);transition:padding .25s}
+.proj:last-child{border-bottom:1px solid var(--ln)}.proj:hover{padding-left:12px}
+.proj h3{margin:0 0 4px;font-size:22px}.proj .d{font:400 12px "JetBrains Mono",monospace;color:var(--mu);margin-bottom:12px}
+.proj ul{margin:0 0 4px;padding-left:18px;color:var(--mu)}.proj li{margin-bottom:6px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.tags span{font:400 12px "JetBrains Mono",monospace;border:1px solid var(--ln);padding:2px 9px;border-radius:3px;color:var(--mu)}
+.gh{font:400 13px "JetBrains Mono",monospace;color:var(--ac);text-decoration:none}.gh:hover{text-decoration:underline}
+.skills{display:grid;grid-template-columns:150px 1fr;gap:14px 24px;margin:0}
+.skills dt{font:400 12px "JetBrains Mono",monospace;color:var(--mu);padding-top:3px}.skills dd{margin:0}
+.big{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.big div{border-left:2px solid var(--ac);padding-left:16px}
+.big b{font-size:34px;display:block;line-height:1.1}.big span{color:var(--mu);font-size:15px}
+form{display:grid;gap:12px;margin-top:28px}
+input,textarea{background:var(--bg2);border:1px solid var(--ln);color:var(--tx);padding:12px 14px;font:inherit;border-radius:3px;width:100%}
+input:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+button{font:500 14px "JetBrains Mono",monospace;background:var(--ac);color:var(--bg);border:0;padding:12px 20px;border-radius:3px;cursor:pointer}
+button.ghost{background:none;color:var(--tx);border:1px solid var(--ln)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+footer{color:var(--mu);font-size:14px;margin-top:64px}
+#bar{position:fixed;top:0;left:0;height:2px;background:var(--ac);width:0;z-index:9}
+.rv{opacity:0;transform:translateY(14px);transition:.6s}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){.wrap{grid-template-columns:1fr;gap:0}aside{position:static;height:auto;padding:48px 0 0}nav{display:none}.links{margin-top:8px}h1{font-size:38px}.row,.skills{grid-template-columns:1fr;gap:6px}main{padding-top:48px}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="wrap">
+<aside>
+  <div class="mark" aria-hidden="true">TNK</div>
+  <h1>Tejas N K</h1>
+  <p class="role">Python backend developer. Django, FastAPI, PostgreSQL and LLM integration. Bengaluru.</p>
+  <nav aria-label="Sections">
+    <a href="#about">about</a><a href="#experience">experience</a><a href="#projects">projects</a><a href="#paper">research</a><a href="#skills">skills</a><a href="#contact">contact</a>
+  </nav>
+  <div class="links"><a href="https://github.com/Tejas7899" rel="noopener">github</a><a href="https://www.linkedin.com/in/tejas-nk" rel="noopener">linkedin</a><a href="mailto:tejas7892250557@gmail.com">email</a></div>
+</aside>
+
+<main>
+<section id="about" class="rv">
+  <h2>about</h2>
+  <p class="lead">I build backend services in Python, and I’m happiest when I can see what a system is doing: query plans, <code>/proc</code>, logs, latency numbers.</p>
+  <p>My internships covered data pipelines, LLM-backed apps and dashboards, so I’ve seen backends from the database up to the screen. My own projects lean towards security: a phishing classifier I presented at a conference, and a Linux telemetry service built straight on <code>/proc</code>.</p>
+  <p>Computer Science graduate, B.E. 2026, CGPA 8.8/10. Looking for a backend or AI-integration role.</p>
+  <div class="proc" aria-label="Details read from your browser">
+    <div class="h">$ cat /proc/visitor <span style="color:var(--mu)"># read from your browser, nothing leaves it</span></div>
+    cores&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <i id="p1">–</i><br>
+    memory&nbsp;&nbsp;&nbsp;&nbsp;: <i id="p2">–</i><br>
+    viewport&nbsp;&nbsp;: <i id="p3">–</i><br>
+    local time&nbsp;: <i id="p4">–</i><br>
+    uptime&nbsp;&nbsp;&nbsp;: <i id="p5">0s</i> on this page
+  </div>
+</section>
+
+<section id="experience" class="rv">
+  <h2>experience</h2>
+  <div class="row"><div class="when">JUL 2025 –<br>DEC 2025</div><div>
+    <h3>Data Engineering Intern</h3><div class="org">ByteForge Technologies</div>
+    <ul><li>Wrote multi-table SQL with CTEs and aggregations across PostgreSQL schemas to check data consistency during large pipeline migrations.</li>
+    <li>Built Python scripts that catch schema mismatches, null-constraint violations and formatting problems in staging tables, cutting manual QA.</li>
+    <li>Read query plans with EXPLAIN ANALYZE and recommended indexes that reduced run time on heavy queries.</li></ul></div></div>
+  <div class="row"><div class="when">MAR 2025 –<br>JUN 2025</div><div>
+    <h3>AI Developer Intern</h3><div class="org">Quirky Pvt. Ltd. (AI Wallah)</div>
+    <ul><li>Built full-stack web apps that call LLM endpoints (Gemini, OpenAI, Groq) from Python backends.</li>
+    <li>Parsed structured JSON output with Pydantic and added exponential backoff for rate limits and transient API errors.</li>
+    <li>Compared latency, token cost and response consistency across 20+ edge cases to tune RAG workflows.</li></ul></div></div>
+  <div class="row"><div class="when">15 WEEKS</div><div>
+    <h3>Web Development Intern</h3><div class="org">Edutainer</div>
+    <ul><li>Built dashboard pages for an incident-monitoring platform in HTML, CSS, JavaScript and jQuery.</li>
+    <li>Wired backend APIs into the UI to show live alerts, geo-location data and analytics charts.</li>
+    <li>Used React for part of the interface, at a basic level.</li></ul></div></div>
+</section>
+
+<section id="projects" class="rv">
+  <h2>projects</h2>
+  <article class="proj">
+    <h3>VigilAI</h3><div class="d">OCT 2024 – AUG 2025 · email phishing and threat detection</div>
+    <ul><li>Django service that classifies spam and phishing emails using TF-IDF and scikit-learn.</li>
+    <li>REST endpoints for real-time inference, responding in under 100 ms; payloads tested with Postman.</li>
+    <li>Dockerised so anyone can run it locally without setup.</li>
+    <li>Architecture and benchmarks presented at ICAIES 2025.</li></ul>
+    <div class="tags"><span>Python</span><span>Django</span><span>scikit-learn</span><span>TF-IDF</span><span>Docker</span><span>Postman</span></div>
+    <a class="gh" href="https://github.com/Tejas7899" rel="noopener">github →</a>
+  </article>
+  <article class="proj">
+    <h3>Linux System Monitoring &amp; Telemetry Service</h3><div class="d">JUL 2025 – DEC 2025</div>
+    <ul><li>Background Flask daemon that reads live CPU, memory, disk and process metrics directly from <code>/proc</code>.</li>
+    <li>Six REST endpoints returning structured JSON, with CPU overhead under 2% during continuous collection.</li>
+    <li>Regex log parsing with dynamic thresholds that raises warnings under simulated stress.</li></ul>
+    <div class="tags"><span>Python</span><span>Flask</span><span>Linux</span><span>/proc</span><span>REST</span></div>
+    <a class="gh" href="https://github.com/Tejas7899" rel="noopener">github →</a>
+  </article>
+  <article class="proj">
+    <h3>Malicious URL Classifier</h3><div class="d">48-HOUR HACKATHON</div>
+    <ul><li>Built and deployed a real-time malicious URL classifier with machine learning pipelines in one weekend sprint.</li></ul>
+  </article>
+</section>
+
+<section id="paper" class="rv">
+  <h2>research</h2>
+  <div class="row"><div class="when">DEC 2025</div><div>
+    <h3>VigilAI: Email Spam &amp; Phishing Classifier with LLMs, DDoS &amp; MITM Detector</h3>
+    <div class="org">Presented at ICAIES 2025, Rajeev Institute of Technology, Hassan</div>
+    <ul><li>Paper on AI-based cybersecurity covering spam, phishing, DDoS and man-in-the-middle detection with language models and machine learning. I built the backend logic and threat analysis pipelines.</li></ul></div></div>
+  <div class="row"><div class="when">2024</div><div>
+    <h3>1st place, Sparkle Ideas ’24</h3><div class="org">IKP EDEN, Bengaluru</div>
+    <ul><li>For an automated IoT hardware and software prototype.</li></ul></div></div>
+</section>
+
+<section id="skills" class="rv">
+  <h2>skills</h2>
+  <dl class="skills">
+    <dt>languages</dt><dd>Python, C++, Java, SQL</dd>
+    <dt>backend</dt><dd>Django, FastAPI, Flask, RESTful API design</dd>
+    <dt>frontend</dt><dd>HTML, CSS, JavaScript, jQuery, React (basic)</dd>
+    <dt>data &amp; tools</dt><dd>PostgreSQL, MySQL, Redis, Docker, Git, Postman</dd>
+    <dt>cs core</dt><dd>DSA, OOP, DBMS, operating systems, computer networks</dd>
+  </dl>
+  <div class="big" style="margin-top:48px">
+    <div><b>&lt;100ms</b><span>VigilAI inference response</span></div>
+    <div><b>&lt;2%</b><span>CPU overhead of the telemetry daemon</span></div>
+    <div><b>6</b><span>REST endpoints in the monitoring service</span></div>
+    <div><b>20+</b><span>edge cases evaluated for RAG workflows</span></div>
+  </div>
+</section>
+
+<section id="contact" class="rv">
+  <h2>contact</h2>
+  <p class="lead">Hiring for a backend or AI-integration role, or just want to talk about something I built? Write to me.</p>
+  <div class="btns">
+    <button class="ghost" id="copy" type="button">copy email</button>
+    <a href="mailto:tejas7892250557@gmail.com"><button type="button">tejas7892250557@gmail.com</button></a>
+  </div>
+  <form id="f">
+    <input name="n" placeholder="Your name" required aria-label="Your name">
+    <input name="e" type="email" placeholder="Your email" required aria-label="Your email">
+    <textarea name="m" rows="5" placeholder="Message" required aria-label="Message"></textarea>
+    <div><button type="submit">open in mail app</button></div>
+  </form>
+  <footer>Designed &amp; developed by Tejas N K.</footer>
+</section>
+</main>
+</div>
+<script>
+const links=[...document.querySelectorAll("nav a")],secs=links.map(a=>document.querySelector(a.hash)),bar=document.getElementById("bar");
+addEventListener("scroll",()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+"%";
+let i=0;secs.forEach((s,k)=>{if(s.getBoundingClientRect().top<innerHeight*.4)i=k});links.forEach((a,k)=>a.classList.toggle("on",k===i))},{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(s=>io.observe(s));
+const $=id=>document.getElementById(id),t0=Date.now();
+function tick(){$("p1").textContent=navigator.hardwareConcurrency||"unknown";$("p2").textContent=navigator.deviceMemory?"≥ "+navigator.deviceMemory+" GB":"not reported";
+$("p3").textContent=innerWidth+" × "+innerHeight;$("p4").textContent=new Date().toLocaleTimeString();$("p5").textContent=Math.floor((Date.now()-t0)/1000)+"s"}
+tick();setInterval(tick,1000);addEventListener("resize",tick);
+$("copy").onclick=async e=>{const b=e.target;try{await navigator.clipboard.writeText("tejas7892250557@gmail.com");b.textContent="copied"}catch(_){b.textContent="tejas7892250557@gmail.com"}setTimeout(()=>b.textContent="copy email",2000)};
+$("f").onsubmit=e=>{e.preventDefault();const d=new FormData(e.target);location.href="mailto:tejas7892250557@gmail.com?subject="+encodeURIComponent("Hello from "+d.get("n"))+"&body="+encodeURIComponent(d.get("m")+"\n\n"+d.get("n")+" ("+d.get("e")+")")};
+</script>
+</body>
+</html>
